@@ -1,5 +1,11 @@
 @import 'bootstrap.min.css';
 
+@import 'bootstrap-responsive.min.css';
+
+body {
+  padding: 20px 0 20px 0;
+}
+
 /* helper classes */
 .right {
   text-align: right;
@@ -12,6 +18,8 @@
 	right: 20px;
 	z-index: 9;
 	min-width: 400px;
+}
+#header #cart .content {
   background-color: #fff;
 }
 #header #cart .content {

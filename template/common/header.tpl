@@ -40,7 +40,7 @@
 </head>
 <body>
 
-<div id="container" class="container">
+<div id="container" class="container"><!-- is closed in common/footer.tpl -->
   <div id="header">
     <div class="row">
       <div class="span4">
@@ -50,8 +50,8 @@
           </div>
         <?php } ?>
       </div>
-      <div class="span8">
-        <p id="welcome" class="navbar-text">
+      <div class="span4">
+        <p id="welcome" class="right">
           <?php if (!$logged) { ?>
           <?php echo $text_welcome; ?>
           <?php } else { ?>
@@ -59,10 +59,10 @@
           <?php } ?>
         </p>
       </div>
+      <div class="span4">
+        <?php echo $cart; ?>
+      </div>
     </div>
-
-    <?php echo $cart; ?>
-        
     <div class="navbar">
       <div class="navbar-inner">
         <?php //echo $language; ?>

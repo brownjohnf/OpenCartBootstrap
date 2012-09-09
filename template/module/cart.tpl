@@ -1,5 +1,5 @@
-<ul id="cart" class="nav">
-  <li class="heading right"><a><?php echo $heading_title; ?><span id="cart-total"><?php echo $text_items; ?></span></a></li>
+<div id="cart">
+  <div class="heading right"><a class="btn"><?php //echo $heading_title; ?><span id="cart-total"><?php echo $text_items; ?></span></a></div>
   <div class="content">
     <?php if ($products || $vouchers) { ?>
     <div class="mini-cart-info">
@@ -46,4 +46,4 @@
     <div class="empty"><?php echo $text_empty; ?></div>
     <?php } ?>
   </div>
-</ul>
+</div>
