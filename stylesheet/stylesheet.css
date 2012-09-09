@@ -1,0 +1,22 @@
+@import 'bootstrap.min.css';
+
+/* helper classes */
+.right {
+  text-align: right;
+}
+
+/* compliance css for use with js/php templating directives */
+#header #cart {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 9;
+	min-width: 400px;
+  background-color: #fff;
+}
+#header #cart .content {
+  display: none;
+}
+#header #cart.active .content {
+  display: block;
+}
